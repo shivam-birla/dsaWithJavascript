@@ -11,6 +11,7 @@ if(nTerms <=0) {
     console.log('Enter a positive integer.');
 }
 else {
+    
     for(let i = 0; i < nTerms; i++) {
         console.log(fibonacci(i));
     }

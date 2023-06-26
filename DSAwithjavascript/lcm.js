@@ -1,5 +1,5 @@
-let num1=6
-let num2=8
+let num1=2
+let num2=5
 let min=(num1>num2)?num1:num2
 while (true) {
     if(min%num1==0&&min%num2==0){
@@ -7,4 +7,4 @@ while (true) {
         break
     }
     min++
-}
+}                

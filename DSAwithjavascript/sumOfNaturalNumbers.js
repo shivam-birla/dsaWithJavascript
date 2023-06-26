@@ -5,3 +5,16 @@ let num=sum+i
 sum=num
 }
 console.log(sum);
+let a = 'ram';
+
+let b = new Number(3);
+
+let c = 'ram';
+
+
+
+console.log(a == b);
+
+console.log(a === b);
+
+console.log(b === c);

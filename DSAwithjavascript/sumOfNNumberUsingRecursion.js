@@ -5,5 +5,5 @@ function sum(num){
         return num
     }
 }
-let result=sum(5)
+let result=sum(9)
 console.log(result)
