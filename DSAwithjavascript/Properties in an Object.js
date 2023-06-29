@@ -7,5 +7,6 @@ let x={
 let count=0
 for(let _key in x){
 count++
+values=_key
 }
 console.warn(count);
