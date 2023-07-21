@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+</head>
+
+<body>
+    <h1>Countdown Timer</h1>
+    <h2 id="h2"></h2>
+    <input type="number" name="" id="inputNum">
+    <button onclick="onSubmit()" id="button">start</button>
+    <script>
+        function onSubmit() {
+            let y = 0;
+            let x = document.getElementById('inputNum').value;
+            
+            // Validate the input to ensure it's a positive number
+            if (isNaN(x) || x <= 0) {
+                alert("Please enter a valid positive number.");
+                return;
+            }
+            
+            x = parseInt(x); // Convert input value to an integer
+
+            let count = setInterval(() => {
+                y++;
+                let remainingTime = x - y;
+                
+                // Prevent negative display
+                remainingTime = Math.max(0, remainingTime);
+
+                document.getElementById('h2').innerText = remainingTime;
+
+                if (remainingTime === 0) {
+                    clearInterval(count);
+                    alert("Countdown completed!");
+                }
+            }, 1000);
+        }
+    </script>
+</body>
+
+</html>
